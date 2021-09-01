@@ -46,6 +46,6 @@ dpkg -l cron
 apt-get install cron
 systemctl status cron
 sudo touch /etc/cron.d/automation
-sudo echo "30 23 */2 * * root /root/Automation_Project/automation.sh" > /etc/cron.d/automation
+sudo echo "30 23 */1 * * root /root/Automation_Project/automation.sh" > /etc/cron.d/automation
 sudo chmod 600 /etc/cron.d/automation
 echo "Cron job scheduled"
