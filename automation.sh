@@ -41,7 +41,7 @@ else
    echo "Inventory File Created"
 fi
 echo -e "<br>${Log_type} &emsp; ${timestamp} &ensp; ${Type} &ensp; ${fsize}</br>" >> /var/www/html/inventory.html
-echo "Metadata copied to inventory.html"
+echo "Log File appended"
 dpkg -l cron
 apt-get install cron
 systemctl status cron
